@@ -8,6 +8,7 @@
         <!-- Include Styles -->
         <link rel="stylesheet"
               href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
+         <link rel="stylesheet" href="./css/main.css">
          <style type="text/css">.col-xs-12, .col-xs-4, .col-xs-8 {border: 1px solid red;}</style>
     </head>
     <body>
@@ -63,7 +64,7 @@
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td><img height="30" width="30" src="./img/me.jpeg"></td>
+                                <td><img height="30" width="30" src="./img/me.jpeg"  class="img-circle"></td>
                                 <td><a title="Редагувати" href="#">Корост</a></td>
                                 <td><a title="Редагувати" href="#">Андрій</a></td>
                                 <td>2123</td>
@@ -82,15 +83,80 @@
                                                 <a role="menuitem" tabindex="-1" href="#">Редагувати</a>
                                             </li>
                                             <li role="presentation">
-                                                 <a role="menuitem" tabindex="-1" href="#">Ви\                                           далити</a>
+                                                 <a role="menuitem" tabindex="-1" href="#">Видалити</a>
                                              </li>
                                          </ul>
                                      </div>
                                  </td>
                              </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><img height="30" width="30" src="./img/1.jpeg"  class="img-circle"></td>
+                                <td><a title="Редагувати" href="#">Корост2</a></td>
+                                <td><a title="Редагувати" href="#">Андрій2</a></td>
+                                <td>2</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle"
+                                            type="button" data-toggle="dropdown">Дія
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li role="presentation">
+                                                <a role="menuitem" tabindex="-1" href="#">Відвідування</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a role="menuitem" tabindex="-1" href="#">Редагувати</a>
+                                            </li>
+                                            <li role="presentation">
+                                                 <a role="menuitem" tabindex="-1" href="#">Видалити</a>
+                                             </li>
+                                         </ul>
+                                     </div>
+                                 </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><img height="30" width="30" src="./img/me.jpeg"  class="img-circle"></td>
+                                <td><a title="Редагувати" href="#">Корост3</a></td>
+                                <td><a title="Редагувати" href="#">Андрій3</a></td>
+                                <td>2123</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle"
+                                            type="button" data-toggle="dropdown">Дія
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li role="presentation">
+                                                <a role="menuitem" tabindex="-1" href="#">Відвідування</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a role="menuitem" tabindex="-1" href="#">Редагувати</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a role="menuitem" tabindex="-1" href="#">Видалити</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
                          </tbody>
                      </table>
-                     <!-- End Students Listing -->
+                    <!-- End Students Listing -->
+                    <!-- Navigation -->
+                    <nav>
+                        <ul class="pagination">
+                            <li><a href="#">&laquo;</a></li>
+                            <li><a href="#">1</a></li>
+                            <li class="active"><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                    </nav>
+
                 </div>
             </div>
             <!-- End Main Page Content -->
