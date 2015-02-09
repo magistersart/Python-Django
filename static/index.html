@@ -5,24 +5,20 @@
 		<title>Сервіс Обліку Студентів</title>
 		<meta name="description"
 			value="Система Обліку Студентів Навчального Закладу"/>
-        <!-- Include Styles -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
-         <link rel="stylesheet" href="./css/main.css">
-         <style type="text/css">.col-xs-12, .col-xs-4, .col-xs-8 {border: 1px solid red;}</style>
-    </head>
-    <body>
-
+		<!-- Include Styles -->
+        <style type="text/css">.col-xs-12, .col-xs-4, .col-xs-8 {border:1px solid red;}</style>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
 		<!-- Start Container -->
 		<div class="container">
-
 			<!-- Start Header -->
 			<div class="row" id="header">
-
 				<!--Logo -->
 				<div class="col-xs-8">
 					<h1>Сервіс Обліку Студентів</h1>
 				</div>
-
 				<!-- Groups Selector -->
 				<div class="col-xs-4" id="group-selector">
 					<strong>Група:</strong>
@@ -34,52 +30,52 @@
 				</div>
 			</div>
 			<!--End Header -->
-
 			<!-- Start SubHeader -->
 			<div class="row" id="sub-header">
 				<div class="col-xs-12">
 					<ul class="nav nav-tabs" role="tablist">
-						<li role="presentation"><a href="#">Студенти</a></li>
+						<li role="presentation" class="active"><a href="#">Студенти</a></li>
 						<li role="presentation"><a href="#">Відвідування</a></li>
-						<li role="presentation" class="active"><a href="#">Групи</a></li>
+						<li role="presentation"><a href="#">Групи</a></li>
 					</ul>
 				</div>
 			</div>
 			<!-- End SubHeader -->
-
 			<!-- Start Main Page Content -->
 			<div class="row" id="content-columns">
-
 				<div class="col-xs-12" id="content-column">
+ 				<!-- Status Message -->
+					<div class="alert alert-warning">Зміни скасовано.</div>
 
 					<div class="col-xs-12">
 						<div class="col-xs-10">
-							<h2>Групи</h2>
+							<h2>База Студентів</h2>
 						</div>
-
-						<!-- Add Group Button -->
+						<!-- Add Student Button -->
 						<div class="col-xs-2" style="margin-top: 22px">
-							<a class="btn btn-primary" id="add-group-btn" href="#">Додати Групу</a>
+							<a class="btn btn-primary" id="add-student-btn" href="#">Додати Студента</a>
 						</div>
 					</div>
-
-
 					<div class="col-xs-12">
-					<!-- Start Groups Listing -->
+						<!-- Start Students Listing -->
 						<table class="table table-hover table-striped">
 							<thead>
 								<tr>
 									<th>№</th>
-									<th><a href=""></a>Назва</th>
-									<th><a href="#"></a>Староста</th>
+									<th>Фото</th>
+									<th><a href=""></a>Прізвище</th>
+									<th><a href="#"></a>Ім'я</th>
+									<th><a href="#"></a>№ Білету</th>
 									<th>Дії</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>1</td>
-									<td><a title="Редагувати" href="#"></a>ЕМЕ-12</td>
-									<td><a title="Редагувати" href="#"></a>Петренко Іван</td>
+									<td><img heigth = "30" width = "30" class="img-circle"  src="static/img/me.jpg"></td>
+									<td><a title="Редагувати" href="#"></a>Петренко</td>
+									<td><a title="Редагувати" href="#"></a>Іван</td>
+									<td>1234</td>
 									<td>
 										<div class="dropdown">
 											<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
@@ -96,8 +92,10 @@
 								</tr>
 								<tr>
 									<td>2</td>
-									<td><a title="Редагувати" href="#"></a>ЕМЕ-13</td>
-									<td><a title="Редагувати" href="#"></a>Коваленко Петро</td>
+									<td><img src="static/img/skevs.jpg" heigth = "30" width = "30" class="img-circle"></td>
+									<td><a title="Редагувати" href="#"></a>Коваленко</td>
+									<td><a title="Редагувати" href="#"></a>Петро</td>
+									<td>5678</td>
 									<td>
 										<div class="dropdown">
 											<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
@@ -114,8 +112,10 @@
 								</tr>
 								<tr>
 									<td>3</td>
-									<td><a title="Редагувати" href="#"></a>ЕМЕ-13</td>
-									<td><a title="Редагувати" href="#"></a>Кацман Іцхак</td>
+									<td><img heigth = "30" width = "30" class="img-circle" src="static/img/alex.jpg"></td>
+									<td><a title="Редагувати" href="#"></a>Кацман</td>
+									<td><a title="Редагувати" href="#"></a>Іцхак</td>
+									<td>9999</td>
 									<td>
 										<div class="dropdown">
 											<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
@@ -132,23 +132,22 @@
 								</tr>
 							</tbody>
 						</table>
-						<!-- End Groups Listing -->
-
+						<!-- End Students Listing -->
 						<nav>
 							<ul class="pagination">
+								<li><a href="#">&laquo;</a></li>
 								<li><a href="#">1</a></li>
 								<li class="active"><a href="#">2</a></li>
-								<li><a href="#">Далі</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">&raquo;</a></li>
 							</ul>
 						</nav>
-
 					</div>
-
 				</div>
-
 			</div>
 			<!-- End Main Page Content -->
-
 			<!-- Start Footer -->
 			<div class="row" id="footer">
 				<div class="col-xs-12">
@@ -156,11 +155,11 @@
 				</div>
 			</div>
 			<!-- End Footer -->
-
 		</div>
 		<!-- End Container -->
 		<!-- JavaScript Section -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
 	</body>
 </html>
