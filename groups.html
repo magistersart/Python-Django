@@ -1,152 +1,166 @@
 <!DOCTYPE html>
-<html>
-    <head lang="uk">
-        <meta charset="UTF-8">
-        <title>>Сервіс Обліку Худоби</title>
-        <meta name="description"
-              value="Система Обліку Дрібної Рогатої Худоби" />
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<title>Сервіс Обліку Студентів</title>
+		<meta name="description"
+			value="Система Обліку Студентів Навчального Закладу"/>
         <!-- Include Styles -->
-        <link rel="stylesheet"
-              href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
          <link rel="stylesheet" href="./css/main.css">
          <style type="text/css">.col-xs-12, .col-xs-4, .col-xs-8 {border: 1px solid red;}</style>
     </head>
     <body>
-        <!-- Start Container -->
-        <div class="container">
-            <!-- Start Header -->
-            <div class="row" id="header">
-                <!-- Logo -->
-                <div class="col-xs-8">
-                    <h1>Сервіс Обліку худоби</h1>
-                </div>
-                <!-- Groups Selector -->
-                <div class="col-xs-4" id="group-selector">
-                    <strong>Вид:</strong>
-                    <select>
-                        <option value="">Уся худоба</option>
-                        <option value="">Агнці</option>
-                        <option value="">Козліща</option>
-                    </select>
-                </div>
-            </div>
-            <!-- End Header -->
-            <!-- Start SubHeader -->
-            <div class="row" id="sub-header">
-                 <div class="col-xs-12">
-                     <ul class="nav nav-tabs" role="tablist">
-                         <li role="presentation" class="active"><a href="#">Худобиська</a></li>
-                         <li role="presentation"><a href="#">Роги</a></li>
-                         <li role="presentation"><a href="#">Вид</a></li>
-                     </ul>
-                 </div>
-            </div>
-            <!-- End SubHeader -->
-            <!-- Start Main Page Content -->
-            <div class="row" id="content-columns">
-                <div class="col-xs-12" id="content-column">
-                    <h2>Групи</h2>
-                    <!-- Add Group Button -->
-                    <a class="btn btn-primary" href="#">Додати групу</a>
-                    <table class="table table-hover table-striped">
-                        <thead>
-                            <th>№</th>
-                            <th>Назва &uarr;</th>
-                            <th>Староста</th>
-                            <th>Дії</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td><a title="Редагувати" href="#">TB</a></td>
-                                <td><a title="Редагувати" href="#">Лисий Чорт</a></td>
-                                <td>
-                                    <div class="dropdown">
-                                        <button class="btn btn-default dropdown-toggle"
-                                            type="button" data-toggle="dropdown">Дія
-                                            <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li role="presentation">
-                                                <a role="menuitem" tabindex="-1"
-                                                href="#">Відвідування</a>
-                                            </li>
-                                            <li role="presentation">
-                                                <a role="menuitem" tabindex="-1" href="#">Редагувати</a>
-                                            </li>
-                                            <li role="presentation">
-                                                 <a role="menuitem" tabindex="-1" href="#">Видалити</a>
-                                             </li>
-                                         </ul>
-                                     </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td><a title="Редагувати" href="#">AA</a></td>
-                                <td><a title="Редагувати" href="#">Ще Один</a></td>
-                                <td>
-                                    <div class="dropdown">
-                                        <button class="btn btn-default dropdown-toggle"
-                                            type="button" data-toggle="dropdown">Дія
-                                            <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li role="presentation">
-                                                <a role="menuitem" tabindex="-1"
-                                                href="#">Відвідування</a>
-                                            </li>
-                                            <li role="presentation">
-                                                <a role="menuitem" tabindex="-1" href="#">Редагувати</a>
-                                            </li>
-                                            <li role="presentation">
-                                                 <a role="menuitem" tabindex="-1" href="#">Видалити</a>
-                                             </li>
-                                         </ul>
-                                     </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td><a title="Редагувати" href="#">ДМ</a></td>
-                                <td><a title="Редагувати" href="#">Третій Докупи</a></td>
-                                <td>
-                                    <div class="dropdown">
-                                        <button class="btn btn-default dropdown-toggle"
-                                            type="button" data-toggle="dropdown">Дія
-                                            <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li role="presentation">
-                                                <a role="menuitem" tabindex="-1"
-                                                href="#">Відвідування</a>
-                                            </li>
-                                            <li role="presentation">
-                                                <a role="menuitem" tabindex="-1" href="#">Редагувати</a>
-                                            </li>
-                                            <li role="presentation">
-                                                 <a role="menuitem" tabindex="-1" href="#">Видалити</a>
-                                             </li>
-                                         </ul>
-                                     </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <!-- End Main Page Content -->
-            <!-- Start Footer -->
-             <div class="row" id="footer">
-                 <div class="col-xs-12">
-                     &copy; 2015 Сарт
-                 </div>
-             </div>
-            <!-- End Footer -->
-        </div>
-        <!-- End Container -->
-        <!-- Javascripts Section -->
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
-        <script src="https://cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    </body>
+
+		<!-- Start Container -->
+		<div class="container">
+
+			<!-- Start Header -->
+			<div class="row" id="header">
+
+				<!--Logo -->
+				<div class="col-xs-8">
+					<h1>Сервіс Обліку Студентів</h1>
+				</div>
+
+				<!-- Groups Selector -->
+				<div class="col-xs-4" id="group-selector">
+					<strong>Група:</strong>
+					<select>
+						<option value="">Усі Студенти</option>
+						<option value="">МтМ - 21, Подоба Віталій (No 254)</option>
+						<option value="">МтМ - 22, Корост Андрій (No 2123)</option>
+					</select>
+				</div>
+			</div>
+			<!--End Header -->
+
+			<!-- Start SubHeader -->
+			<div class="row" id="sub-header">
+				<div class="col-xs-12">
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation"><a href="#">Студенти</a></li>
+						<li role="presentation"><a href="#">Відвідування</a></li>
+						<li role="presentation" class="active"><a href="#">Групи</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- End SubHeader -->
+
+			<!-- Start Main Page Content -->
+			<div class="row" id="content-columns">
+
+				<div class="col-xs-12" id="content-column">
+
+					<div class="col-xs-12">
+						<div class="col-xs-10">
+							<h2>Групи</h2>
+						</div>
+
+						<!-- Add Group Button -->
+						<div class="col-xs-2" style="margin-top: 22px">
+							<a class="btn btn-primary" id="add-group-btn" href="#">Додати Групу</a>
+						</div>
+					</div>
+
+
+					<div class="col-xs-12">
+					<!-- Start Groups Listing -->
+						<table class="table table-hover table-striped">
+							<thead>
+								<tr>
+									<th>№</th>
+									<th><a href=""></a>Назва</th>
+									<th><a href="#"></a>Староста</th>
+									<th>Дії</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td><a title="Редагувати" href="#"></a>ЕМЕ-12</td>
+									<td><a title="Редагувати" href="#"></a>Петренко Іван</td>
+									<td>
+										<div class="dropdown">
+											<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+												Дія
+												<span class="caret"></span>
+											</button>
+											<ul class="dropdown-menu" role="menu">
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Відвідування</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Редагувати</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Видалити</a></li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td><a title="Редагувати" href="#"></a>ЕМЕ-13</td>
+									<td><a title="Редагувати" href="#"></a>Коваленко Петро</td>
+									<td>
+										<div class="dropdown">
+											<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+												Дія
+												<span class="caret"></span>
+											</button>
+											<ul class="dropdown-menu" role="menu">
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Відвідування</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Редагувати</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Видалити</a></li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td><a title="Редагувати" href="#"></a>ЕМЕ-13</td>
+									<td><a title="Редагувати" href="#"></a>Кацман Іцхак</td>
+									<td>
+										<div class="dropdown">
+											<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+												Дія
+												<span class="caret"></span>
+											</button>
+											<ul class="dropdown-menu" role="menu">
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Відвідування</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Редагувати</a></li>
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Видалити</a></li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- End Groups Listing -->
+
+						<nav>
+							<ul class="pagination">
+								<li><a href="#">1</a></li>
+								<li class="active"><a href="#">2</a></li>
+								<li><a href="#">Далі</a></li>
+							</ul>
+						</nav>
+
+					</div>
+
+				</div>
+
+			</div>
+			<!-- End Main Page Content -->
+
+			<!-- Start Footer -->
+			<div class="row" id="footer">
+				<div class="col-xs-12">
+					&copy; 2015 Сарт
+				</div>
+			</div>
+			<!-- End Footer -->
+
+		</div>
+		<!-- End Container -->
+		<!-- JavaScript Section -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	</body>
 </html>
