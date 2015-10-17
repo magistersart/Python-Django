@@ -1,66 +1,109 @@
 <!DOCTYPE html>
 <html lang="uk">
-	<head>
-		<meta charset="UTF-8">
-		<title>Сервіс Обліку Студентів</title>
-		<meta name="description"
-			value="Система Обліку Студентів Навчального Закладу"/>
-        <!-- Include Styles -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
-         <link rel="stylesheet" href="css/main.css">
-         <style type="text/css">.col-xs-12, .col-xs-4, .col-xs-8 {border: 1px solid red;}</style>
-    </head>
-    <body>
-		<!-- Start Container -->
-		<div class="container">
-			<!-- Start Header -->
-			<div class="row" id="header">
-				<!--Logo -->
-				<div class="col-xs-8">
-					<h1>Сервіс Обліку Студентів</h1>
-				</div>
-            </div>
-			<!-- Start Main Page Content -->
-			<div class="row" id="content-columns">
-				<div class="col-xs-12" id="content-column">
-                    <h2>Форма редагування студента</h2>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Сервіс Обліку Студентів</title>
+  <meta name="description" value="Система Обліку Студентів Навчального Закладу" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet"
+        href="./css/main.css">
+</head>
+<body>
+
+
+    <!-- Start Container -->
+    <div class="container">
+
+        <h1>Форма редагування Студента</h1>
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="text">І'мя</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" >
                 </div>
             </div>
-            <div class="row" id="form">
-                <div class="col-xs-12">
-                    <form>
-                        <div class="form-group">
-                            <label for="FirstName">Ім'я</label>
-                            <input type="text" class="form-control" id="FirstName" placeholder="Ім'я">
-                        </div>
-                        <div class="form-group">
-                            <label for="MiddleName">По-батькові</label>
-                            <input type="text" class="form-control" id="MiddleName" placeholder="По-батькові">
-                        </div>
-                        <div class="form-group">
-                            <label for="LastName">Прізвище</label>
-                            <input type="text" class="form-control" id="LastName" placeholder="Прізвище">
-                        </div>
-                        <div class="form-group">
-                            <label for="Ticket">Номер білета</label>
-                            <input type="number" class="form-control" id="LastName" placeholder="№">
-                        </div>
-                        <div class="form-group">
-                            <label for="Ticket">Дата народження</label>
-                            <input type="date" class="form-control" id="LastName" placeholder="01.01.1970">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputFile">Фото</label>
-                            <input type="file" id="exampleInputFile">
-                            <p class="help-block">якийсь текст</p>
-                        </div>
-                    </form>
+        </form>
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="text">По-батькові</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" >
                 </div>
             </div>
+        </form>
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="text">Прізвище</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" >
+                </div>
+            </div>
+        </form>
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="text">№ Білету</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" >
+                </div>
+            </div>
+        </form>
+
+        </form>
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="text">День Народження</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" >
+                </div>
+            </div>
+        </form>
+
+
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="text">Фото</label>
+                <div class="col-sm-3">
+                    Наразі :<a href="https://pp.vk.me/c319021/v319021895/7ace/v3Pq53X0RG0.jpg">https://photo.jpg</a><br>
+                    Очистити<br><br>
+                    Змінити:<input type="submit" value="Choose file"> No file choosen
+                </div>
+            </div>
+        
+
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="text">Група</label>
+                <div class="col-sm-3">
+                  <select class="form-control">
+                    <option>ДЕ-31</option>
+                    <option>ДЕ-32</option>
+                  </select>
+                </div>
+            </div>
+        </form>
+
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="text">Додаткові нотатки</label>
+                <div class="col-sm-3">
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+            </div>
+        </form>
+
+
+        <!-- Bottom Buttons -->
+        <div id='backbut'>
+            <button type="button" class="btn btn-primary">Зберегти</button>
+            <button type="button" class="btn btn-link">Скасувати</button>
         </div>
-        <!-- End Container -->
-		<!-- JavaScript Section -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    </body>
+    </div>
+    <!-- End Container -->
+    <!-- Javascripts Inclusion -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</body>
 </html>
